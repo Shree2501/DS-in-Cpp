@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+// void changeA(int* ptr){
+//     *ptr = 20;
+// }
+// int main(){
+//     int a = 10;
+//     changeA(&a);
+//     cout << "the value inside main fxn: " << a;
+//     return 0;
+// }
+
+// pass by reference using alias
+void changeA(int &b){
+    b = 20;
+}
+int main(){
+    int a = 10;
+    changeA(a);
+    cout << "the value inside main fxn: " << a;
+    return 0;
+}
